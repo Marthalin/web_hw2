@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Registration form</title>
+<link rel="stylesheet" type="text/css" href="reg.css">
+</head>
+
+<body>
+	<br>
+	<header>
+		<h1>報名資料</h1>
+	</header>
+
+	<form>
+		<p>
+		姓名(必填)：
+		<input  type="text" name="name" maxlength="10" required="required" placeholder="請輸入您的名字"/>
+		</p>
+
+		<p>
+		學院(必填)：
+		<select required>
+ 			<option value="Liberal arts">文學院</option>
+			<option value="Social sciences">社會科學學院</option>
+			<option value="Commerce">商學院</option>
+			<option value="Communion">傳播學院</option>
+			<option value="Foreign languages">外國語文學院</option>
+			<option value="Law">法學院</option>
+			<option value="Science">理學院</option>
+			<option value="International affairs">國際事務學院</option>
+			<option value="Education">教育學院</option>
+		</select>
+		</p>
+
+		<p>
+		手機(必填)：
+		<input  type="tel" maxlength="10" required pattern="[0-9]{10}" placeholder="請輸入手機號碼"/>
+		</p>
+
+		<p>
+		信箱(必填)：
+		<input type="email" name="email" required="required" required pattern="@" placeholder="請輸入信箱"/>
+		</p>
+
+		<p>
+		生日：(非必填)
+		<input type=date placeholder="西元年/月/日"/>
+		<p><input type=submit value="送出"></p>
+	</form>
+
+</body>
