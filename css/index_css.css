@@ -1,71 +1,79 @@
-
-
+/*基本設定*/
 body{
 	max-width: 960px;
-	min-width:660px;
-	margin: 0 auto;
+	min-width: 660px;
+	margin: auto;
 }
-body>aside{
-	width: 25% ;
-	float: right;
-}
+/*調整header的部分*/
 header ul{
 	list-style-type:none;
 }
 #head{
 	position: relative;
 }
-#banner{
-	margin-left: -58px;
-	margin-top:0px; 
+.topnav{
+		padding-top:20px; 
 }
-.nav_top li{
+.topnav li{
 	display: inline;
 }
-.nav_top a{
+.topnav a{
 	text-decoration: none;
 	color: black;
 }
-.nav_top1{
+/*政治大學~聯絡我們*/
+.nav1{
 	position: absolute;
 	top:0px;
 	right: 0px;
 	border-bottom: 1px dotted black;
-	display: inline;
 }
-.nav_top2{
+/*首頁到網站地圖及兩個icon*/
+.nav2{
 	position: absolute;
 	top:1.5em;
 	right: 0px;
-	display: inline;
+}
+/*序幕~.....*/
+#upband{
+	margin-left: -58px;
+	margin-top:0px; 
 }
 article ul{
 	list-style-type: none;
 	margin: 0 0 0 0;
 }
+/*政大第12屆駐校藝術家*/
+.titleair{
+	flex:3;
+}
+/*arrow1是節目總覽|序言~李泰祥影音文件展*/
+/*arrow2是音樂工作坊~每日有獎徵答*/
+.arrow1, .arrow2{
+	flex:1;
+}
+.arrow1 a{
+	display: inline-block;
+	text-decoration: none;
+}
+.arrow2 a{
+	display: inline-block;
+	text-decoration: none;
+}
+.arrow1 li{
+	border-bottom: 1px dotted black; 
+}
+.arrow2 li{
+	border-bottom: 1px dotted black; 
+}
+/*content是節目總覽~每日有獎徵答*/
 .content{
 	display: flex;
 	margin-top: 0px;
+	margin-right: 1%;
 }
-.title_air{
-	flex:3;
-}
-.list1, .list2{
-	flex:1;
-}
-.list1 a{
-	display: inline-block;
-	text-decoration: none;
-}
-.list2 a{
-	display: inline-block;
-	text-decoration: none;
-}
-.list1 li{
-	border-bottom: 1px dotted black; 
-}
-.list2 li{
-	border-bottom: 1px dotted black; 
+.content a{
+	color: green;
 }
 .content a:visited{
 	color: red;
@@ -73,100 +81,130 @@ article ul{
 .content a:hover{
 	color: orange;
 }
+/*content2是中間三個黑色圖跟部分文字的div*/
 .content2{
-	display: inline-block;
+	margin-right: 1%;
+	display: flex;
 	margin-top: 5px;
 }
-.content2-1{
+/*content2_1是黑色圖中間的文字*/
+.content2_1{
 	flex:2;
 	background-color: black;
 	color: white;
 	padding-left:1em; 
 	padding-top: 1em;
 }
-.content2-1 strong{
+.content2_1 strong{
 	color: orange;
 }
-.content2-1 pre{
+.content2_1 pre{
 	line-height: 1.7em;
-	margin-bottom:0px; 
+		margin-bottom:0px; 
 }
+/*下半部的div 包括音樂會曲目及參加音樂會觀眾注意事項*/
 .content3{
 	display: flex;
 	margin-top:20px; 
 }
+/*左半部的div 音樂會曲目*/
 .content4{
 	flex: 71%;
 	margin-right:1%; 
 }
-.music{
+/*參加音樂會觀眾注意事項*/
+aside{
+	flex: 27%;
+	border-top: 4px solid #99CC00;
+	margin-right: 1%;
+	padding: 1%;
+	background-color:#EEF5DF;
+}
+/*設定成老師的要求1.4em*/
+.musicem{
 	font-size: 1.4em;
 	color: #669933;
 }
-#list td:nth-child(1){
+/*表格的基本設定*/
+#table1 td:nth-child(1){
 	width:20%;
 	text-align: center;
 }
-#list td:nth-child(2){
+#table1 td:nth-child(2){
 	width:40%;
 }
-#list td:nth-child(3){
+#table1 td:nth-child(3){
 	width:40%;
 }
-article #list{
+#table1{
 	width: 100%;
 	background-color: #EEF5DF;
 }
-article #list tr:nth-child(1){
+#table1 tr:nth-child(1){
 	background-color:#99CC00;
 }
-article #list tr:nth-child(9){
+#table1 tr:nth-child(9){
 	background-color: white;
 	font-weight: bold;
 }
-article #list tr:nth-child(20){
+#table1 tr:nth-child(20){
 	background-color: white;
 	font-weight: bold;
 }
-.word{
-	font-size: 0.7em;
-	line-height: 1.7;
+
+/*音樂會演出單位介紹的部分*/
+.faketable{
+	display: flex;
+	border-bottom: 1px  dotted orange;
+	margin-top:15px; 
 }
-.name{
+.faketable1{
+	display: flex;
+	margin-top:15px; 
+}
+/*音樂會演出單位介紹左邊的圖片設定*/
+.weirdpicture{
+	margin: 5px 0px 5px 0px;
+}
+/*老師作業規定寬62%*/
+.sixtytwo{
+	flex:62%;
+	margin: 5px 10px 5px 10px;
+}
+.sixtytwo h3{
+	font-size: 15px;
+	color: #669933;
+}
+.sixtytwo p{
+	font-size: 12px;
+	line-height: 20px;
+}
+/*演出名單顏色改為橘色*/
+.orangeone{
 	color: orange;
 }
-.group{
-	width:62 %;
-	margin-bottom: 15px;
+/*邊攔*/
+aside #firstp{
+	color:#666666;
+	font-size: 1.0em;
 }
-
-
-
-aside{
-	border-top: 4px solid #99CC00;
-	background-color:#EEF5DF;
-	width: 25%;
-	overflow: auto;
-	float: right;
-	margin-left: 1%;
-	margin-right: 1%;
-	padding-left: 1%;
-	padding-right: 1%;
-}
-#coffee{
+.attention{
+	margin: 8px;
 	font-size: 1.2em;
+	color: #669933;
 }
-#interreg{
-	font-size: 0.7em;
-	line-height: 1.7;
-}
-
+/*top圖示的設定*/
 #top{
 	display: block;
 	text-align: right;
 	margin-top:30px; 
-
-#foot{
+}
+.zeroseven{
+	font-size: 0.7em;
+	line-height: 1.7;
+}
+/*footer的排版*/
+#lastpart{
 	display: flex;
 	border-top: 1px dotted;
 	border-bottom: 10px solid;
@@ -174,19 +212,16 @@ aside{
 	margin-bottom: 25px;
 	align-items: center;
 }
-#foot1{
+#one{
 	display: flex;
 	align-items: center;
 	flex:5.5;
 }
-#foot2{
+#two{
+	text-align: right;
 	flex:4.5;
-	width: 45%;
-	float: right;
-	font-size: 0.7em;
-	line-height: 1.7;
 }
-#foot2 a{
+#two a{
 	display: inline-block;
 	color: black;
     text-decoration: none;
